@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+<h1 align="center">Todo List App</h1>
+  <p align="center">A simple and interactive Todo List built with React, TypeScript, Context API, and useReducer.</p>
+  
+  <h2>Features</h2>
+  <ul>
+    <li>Add tasks to the todo list.</li>
+    <li>Mark tasks as completed by clicking on them.</li>
+    <li>Re-enable tasks by clicking again on completed tasks.</li>
+    <li>View a dynamic and real-time update of your tasks.</li>
+  </ul>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <h2>Technologies Used</h2>
+  <ul>
+    <li><strong>React</strong> - Frontend framework for building the user interface.</li>
+    <li><strong>TypeScript</strong> - Adds type safety and enhances development experience.</li>
+    <li><strong>Context API</strong> - For managing state globally.</li>
+    <li><strong>useReducer</strong> - For state transitions and task management logic.</li>
+  </ul>
 
-Currently, two official plugins are available:
+  <h2>How to Run the Project</h2>
+  <ol>
+    <li>Clone the repository:</li>
+    <pre><code>git clone [repository-url]</code></pre>
+    <li>Navigate to the project directory:</li>
+    <pre><code>cd todo-list</code></pre>
+    <li>Install dependencies:</li>
+    <pre><code>npm install</code></pre>
+    <li>Start the development server:</li>
+    <pre><code>npm start</code></pre>
+    <li>Open your browser and go to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a></li>
+  </ol>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <h2>Project Structure</h2>
+  <ul>
+    <li><code>src/components</code> - Contains all the React components.</li>
+    <li><code>src/context</code> - Context API setup for global state management.</li>
+    <li><code>src/reducers</code> - Reducer logic for handling state transitions.</li>
+    <li><code>src/App.tsx</code> - Main application file.</li>
+  </ul>
 
-## Expanding the ESLint configuration
+  <h2>How It Works</h2>
+  <p>The application uses React's Context API and useReducer to manage the todo list's state globally. Users can add tasks, toggle their completion status, and observe changes in real time. The state management is optimized for scalability and simplicity.</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  <h2>Contributing</h2>
+  <p>Contributions are welcome! Feel free to fork the repository and submit a pull request.</p>
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+  <h2>License</h2>
+  <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
