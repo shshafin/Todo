@@ -20,13 +20,13 @@
   <h2>How to Run the Project</h2>
   <ol>
     <li>Clone the repository:</li>
-    <pre><code>git clone [repository-url]</code></pre>
+    <pre><code>git clone https://github.com/shshafin/Todo.git</code></pre>
     <li>Navigate to the project directory:</li>
     <pre><code>cd todo-list</code></pre>
     <li>Install dependencies:</li>
     <pre><code>npm install</code></pre>
     <li>Start the development server:</li>
-    <pre><code>npm start</code></pre>
+    <pre><code>npm run dev</code></pre>
     <li>Open your browser and go to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a></li>
   </ol>
 
@@ -34,7 +34,6 @@
   <ul>
     <li><code>src/components</code> - Contains all the React components.</li>
     <li><code>src/context</code> - Context API setup for global state management.</li>
-    <li><code>src/reducers</code> - Reducer logic for handling state transitions.</li>
     <li><code>src/App.tsx</code> - Main application file.</li>
   </ul>
 
